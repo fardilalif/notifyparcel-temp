@@ -52,8 +52,9 @@ export const action = async ({ request }) => {
 };
 
 const UserDashboard = () => {
-  const { count } = useLoaderData();
-
+  const loaderData = useLoaderData();
+  if (!loaderData) return null;
+  const { count } = loaderData;
   if (count === 0) {
     return (
       <>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const productionUrl = "https://notifyparcel-api-temp.onrender.com/api/v1";
+const productionUrl = "https://api.notifyparcel.site/api/v1";
 export const customFetch = axios.create({
   baseURL: productionUrl,
   // to allow cookies to be set in the browser
